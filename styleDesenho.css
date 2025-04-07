@@ -130,6 +130,12 @@ h1 {
     transition: transform 0.3s ease-in-out;
 }
 
+#PixelArt {
+    font-size: 15px;
+    color: #fc3ba5;
+    text-decoration: none;
+}
+
 .des0:hover {
     transform: scale(1.05);
 }
