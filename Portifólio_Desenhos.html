@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/png.png" type="image/x-icon">
+    <title>Galeria de Desenhos</title>
+    <link rel="stylesheet" href="styleDesenho.css">
+</head>
+<body>
+    <header class="inicio1">
+        <h1 class="logo1">My Portfólio.</h1>
+        <nav>
+            <ul>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a href="Certificados.html">Certificados</a></li>
+                <li><a href="Portifólio.html">Portfólio</a></li>
+                <li><a href="Portifólio_Desenhos.html">Desenhos</a></li>
+                <li><a href="Curriculo.html">Curriculo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="desenhos/anasuzart.png" alt="" class="des0">
+        <h1>Meu Lado Artístico 🎨</h1>
+        <section class="descricao">
+            <p>Desenhar sempre foi uma grande paixão na minha vida. Comecei ainda criança, aos 12 anos, e, mesmo sem nunca ter feito um curso formal, fui me aprimorando ao longo dos anos, estudando por conta própria e experimentando diferentes técnicas.</p>
+        </section>
+        
+        <section id="galeria">
+            <img src="desenhos/desenho16.jpg" alt="Desenho 16">
+            <img src="desenhos/desenho1.jpg" alt="Desenho 1">
+            <img src="desenhos/desenho2.jpg" alt="Desenho 2">
+            <img src="desenhos/desenho3.jpg" alt="Desenho 3">
+            <img src="desenhos/desenho5.jpg" alt="Desenho 5">
+            <img src="desenhos/desenho6.jpg" alt="Desenho 6">
+            <img src="desenhos/desenho7.jpg" alt="Desenho 7">
+            <img src="desenhos/desenho8.jpg" alt="Desenho 8">
+            <img src="desenhos/desenho0.jpg" alt="Desenho 0">
+            <img src="desenhos/desenho15.jpg" alt="Desenho 15">
+            <img src="desenhos/desenho10.jpg" alt="Desenho 10">
+            <img src="desenhos/desenho11.jpg" alt="Desenho 11">
+            <img src="desenhos/desenho12.jpg" alt="Desenho 12">
+            <img src="desenhos/desenho13.jpg" alt="Desenho 13">
+            <img src="desenhos/desenho14.jpg" alt="Desenho 14">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ana Caroline Suzart - Todos os direitos reservados.</p>
+    </footer>
+
+<div id="meuModal" class="modal">
+    <span id="fecharModal">&times;</span>
+    <img id="imgModal" src="" alt="Imagem ampliada">
+</div>
+
+<script>
+    const modal = document.getElementById('meuModal');
+    const modalImg = document.getElementById('imgModal');
+    const fechar = document.getElementById('fecharModal');
+    const imagens = document.querySelectorAll('#galeria img');
+    imagens.forEach(img => {
+        img.addEventListener('click', () => {
+            modal.style.display = "flex";
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+        });
+    });
+
+    fechar.onclick = () => {
+        modal.style.display = "none";
+    };
+
+    modal.onclick = (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'minhafonte';
+    src: url('fontes/static/Rubik-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'minhafonte2';
+    src: url('fontes/DESIGNER.otf');
+}
+
+body {
+    font-family: 'minhafonte', sans-serif;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+.inicio1 {
+    font-family: 'minhafonte', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+}
+
+#home{
+    color: #d62e85;
+}
+
+.logo1 {
+    font-family: 'minhafonte2';
+    font-size: 1.5rem;
+    color: #ff3ba7;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-family: 'minhafonte' sans-serif;
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+.portfolio {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #fc3ba5;
+    margin-bottom: 20px;
+}
+
+.projeto {
+    display: flex;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 3, 167, 0.3);
+}
+
+.projeto img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.info {
+    font-family: 'minhafonte' sans-serif;
+    text-align: left;
+}
+
+.info h2 {
+    color: #ff3ba7;
+}
+
+.info p {
+    margin: 10px 0;
+}
+
+.info a {
+    display: inline-block;
+    background-color: #ff3ba7;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.info a:hover {
+    background-color: #d62e85;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ff3ba7;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #ff3ba7;
+    font-size: 1rem;
+}
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 1rem;
+    font-family: 'minhafonte', sans-serif;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #ff3ba7;
+}
+
+button {
+    background-color: #ff3ba7;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'minhafonte', sans-serif;
+}
+
+button:hover {
+    background-color: #d62e85;
+}
+
+#mensagemContato {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}

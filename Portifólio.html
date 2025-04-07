@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/png.png" type="image/x-icon">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="stylePortfolio.css">
+</head>
+<body>
+
+<header class="inicio1">
+    <h1 class="logo1">My Portifólio.</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="Certificados.html">Certificados</a></li>
+            <li><a href="Portifólio.html">Portifólio</a></li>
+            <li><a href="Portifólio_Desenhos.html">Desenhos</a></li>
+            <li><a href="Curriculo.html">Curriculo</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="portfolio">
+    <h1>Meus Projetos</h1>
+    
+    <div class="projeto">
+        <img src="icones/CSSJSHTML.png" alt="Projeto HTML">
+        <div class="info">
+            <h2>Site Pessoal</h2>
+            <p>Um site pessoal feito com HTML, CSS e JavaScript para mostrar meu portfólio.</p>
+            <a href="https://github.com/anasuzart89/Logica_e_Programacao_UMC" target="_blank">Ver código</a>
+        </div>
+    </div>
+
+    <div class="projeto">
+        <img src="icones/PYTHON.png" alt="Projeto Python">
+        <div class="info">
+            <h2>Sistema de Cadastro</h2>
+            <p>Aplicação em Python para cadastro de clientes, usando Tkinter para interface gráfica.</p>
+            <a href="https://github.com/anasuzart89/Projeto---Retiro-de-F-rias" target="_blank">Ver código</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="portfolio">
+    <h1>Vamos Conversar!</h1>
+    <form id="formContato">
+      <div class="campo">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <div class="campo">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+      <p id="mensagemContato"></p>
+    </form>
+  </section>
+
+<footer>
+    <p>&copy; 2025 Ana Caroline Suzart - Todos os direitos reservados.</p>
+</footer>
+<script src="portfolio.js" defer></script>
+</body>
+</html>

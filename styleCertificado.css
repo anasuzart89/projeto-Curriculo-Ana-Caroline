@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'minhafonte';
+    src: url('fontes/static/Rubik-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'minhafonte2';
+    src: url('fontes/DESIGNER.otf');
+}
+
+
+body {
+    font-family: 'minhafonte';
+    text-align: center;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    font-size: 90%;
+    position: absolute;
+    top: 11%;
+    right: 60%;
+    gap: 5%;
+}
+
+h2 {
+    color:#fc3ba5;
+    font-family: 'minhafonte', sans-serif;
+}
+
+#ana {
+    font-family: 'minhafonte', sans-serif;
+    margin: 10px;
+    font-size: 150%;
+    color:#000;
+    transition: color 1s ease, opacity 1s ease;
+}#ana:hover {
+    color: white;
+    opacity: 1;
+}
+
+.inicio1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #ff3ba7;
+    font-family: 'minhafonte2', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    font-family: 'minhafonte';
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: opacity 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+nav {
+    display: flex;
+}
+
+h1{
+    font-size: 200%;
+    color:#fc3ba5
+}
+
+p {
+    font-family: 'minhafonte';
+    font-size: 170%;
+    text-align: justify;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+#home {
+    color: #ff3ba7;
+}
+
+.parte1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    max-width: 1200px;
+    text-align: left;
+}
+
+
+
+h2 {
+    color: #fc3ba5;
+    margin-top: 20px;
+}
+
+
+.galeria-certificados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.galeria-certificados img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 3, 167, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-certificados a {
+    display: block;
+    text-decoration: none;
+}
+
+.galeria-certificados img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 3, 167, 0.5);
+}
+
+
+@media (max-width: 768px) {
+    .galeria-certificados {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
