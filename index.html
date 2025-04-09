@@ -6,21 +6,42 @@
     <link rel="shortcut icon" href="imagem/png.png" type="image/x-icon">
     <title>Portfólio | AnaSuzart</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    
 </head>
 <body>
     <header class="inicio1">
         <h1 class="logo">My Portifólio.</h1>
-        <nav>
-            <ul>
-                <li><a id="home" href="index.html">Home</a></li>
-                <li><a href="Certificados.html">Certificados</a></li>
-                <li><a href="Portifólio.html">Portifólio</a></li>
-                <li><a href="Portifólio_Desenhos.html">Desenhos</a></li>
-                <li><a href="Curriculo.html">Curriculo</a></li>
-                <li><a href="#cont">Contato</a></li> 
-            </ul>
+      
+        <!-- Menu padrão PC -->
+        <nav class="menu-padrao">
+          <ul>
+            <li><a id="home" href="index.html">Home</a></li>
+            <li><a href="Certificados.html">Certificados</a></li>
+            <li><a href="Portifólio.html">Portifólio</a></li>
+            <li><a href="Portifólio_Desenhos.html">Desenhos</a></li>
+            <li><a href="Curriculo.html">Curriculo</a></li>
+            <li><a href="#cont">Contato</a></li> 
+          </ul>
         </nav>
-    </header>
+      
+        <!-- Botão hamburguer mobile -->
+        <div class="menu-hamburguer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      
+        <!-- Menu Mobile escondido -->
+        <div class="menu-mobile-content">
+          <a href="index.html">Home</a>
+          <a href="Certificados.html">Certificados</a>
+          <a href="Portifólio.html">Portifólio</a>
+          <a href="Portifólio_Desenhos.html">Desenhos</a>
+          <a href="Curriculo.html">Curriculo</a>
+          <a href="#cont">Contato</a>
+        </div>
+      </header>
     <section class="name">
         <h2> Olá, meu nome é:</h2>
         <h3 id="ana"> Ana Caroline Suzart da silva</h3>
@@ -112,5 +133,6 @@
         </section>
         <p>&copy; 2025. Desenvolvido por Ana Caroline Suzart </p>
     </footer>
+    <script src="menu.js"></script>
 </body>
 </html>

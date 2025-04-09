@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagem/png.png" type="image/x-icon">
     <title>Galeria de Desenhos</title>
     <link rel="stylesheet" href="styleDesenho.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
+
 <body>
     <header class="inicio1">
-        <h1 class="logo1">My Portfólio.</h1>
-        <nav>
+        <h1 class="logo">My Portifólio.</h1>
+
+        <!-- Menu padrão PC -->
+        <nav class="menu-padrao">
             <ul>
                 <li><a id="home" href="index.html">Home</a></li>
                 <li><a href="Certificados.html">Certificados</a></li>
-                <li><a href="Portifólio.html">Portfólio</a></li>
+                <li><a href="Portifólio.html">Portifólio</a></li>
                 <li><a href="Portifólio_Desenhos.html">Desenhos</a></li>
                 <li><a href="Curriculo.html">Curriculo</a></li>
             </ul>
         </nav>
+
+        <!-- Botão hamburguer mobile -->
+        <div class="menu-hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Menu Mobile escondido -->
+        <div class="menu-mobile-content">
+            <a href="index.html">Home</a>
+            <a href="Certificados.html">Certificados</a>
+            <a href="Portifólio.html">Portifólio</a>
+            <a href="Portifólio_Desenhos.html">Desenhos</a>
+            <a href="Curriculo.html">Curriculo</a>
+        </div>
     </header>
 
     <main>
         <div>
             <a href="https://www.instagram.com/suzart.art89/" target="_blank">
-        <img src="desenhos/anasuzart.png" alt="" class="des0">
-        <p id="PixelArt">@suzart.art89</p>
+                <img src="desenhos/anasuzart.png" alt="" class="des0">
+                <p class="PixelArt">@suzart.art89</p>
             </a>
         </div>
         <h1>Meu Lado Artístico 🎨</h1>
         <section class="descricao">
-            <p>Desenhar sempre foi uma grande paixão na minha vida. Comecei ainda criança, aos 12 anos, e, mesmo sem nunca ter feito um curso formal, fui me aprimorando ao longo dos anos, estudando por conta própria e experimentando diferentes técnicas.</p>
+            <p>Desenhar sempre foi uma grande paixão na minha vida. Comecei ainda criança, aos 12 anos, e, mesmo sem
+                nunca ter feito um curso formal, fui me aprimorando ao longo dos anos, estudando por conta própria e
+                experimentando diferentes técnicas.</p>
         </section>
-        
+
         <section id="galeria">
             <img src="desenhos/desenho16.jpg" alt="Desenho 16">
             <img src="desenhos/desenho1.jpg" alt="Desenho 1">
@@ -55,36 +78,37 @@
         <p>&copy; 2025 Ana Caroline Suzart - Todos os direitos reservados.</p>
     </footer>
 
-<div id="meuModal" class="modal">
-    <span id="fecharModal">&times;</span>
-    <img id="imgModal" src="" alt="Imagem ampliada">
-</div>
+    <div id="meuModal" class="modal">
+        <span id="fecharModal">&times;</span>
+        <img id="imgModal" src="" alt="Imagem ampliada">
+    </div>
 
-<script>
-    const modal = document.getElementById('meuModal');
-    const modalImg = document.getElementById('imgModal');
-    const fechar = document.getElementById('fecharModal');
-    const imagens = document.querySelectorAll('#galeria img');
-    imagens.forEach(img => {
-        img.addEventListener('click', () => {
-            modal.style.display = "flex";
-            modalImg.src = img.src;
-            modalImg.alt = img.alt;
+    <script>
+        const modal = document.getElementById('meuModal');
+        const modalImg = document.getElementById('imgModal');
+        const fechar = document.getElementById('fecharModal');
+        const imagens = document.querySelectorAll('#galeria img');
+        imagens.forEach(img => {
+            img.addEventListener('click', () => {
+                modal.style.display = "flex";
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+            });
         });
-    });
 
-    fechar.onclick = () => {
-        modal.style.display = "none";
-    };
-
-    modal.onclick = (e) => {
-        if (e.target === modal) {
+        fechar.onclick = () => {
             modal.style.display = "none";
-        }
-    };
-</script>
+        };
 
+        modal.onclick = (e) => {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
 
+    <script src="menu.js"></script>
 
 </body>
+
 </html>

@@ -20,8 +20,9 @@ body {
     color: white;
     text-align: center;
 }
+
+
 .inicio1 {
-    font-family: 'minhafonte', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,36 +30,64 @@ body {
     padding: 15px;
     background-color: #000;
 }
-
-#home{
-    color: #d62e85;
-}
-
-.logo1 {
-    font-family: 'minhafonte2';
+    
+.logo {
     font-size: 1.5rem;
     color: #ff3ba7;
+    font-family: 'minhafonte2', sans-serif;
 }
-
+    
 nav ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
+    justify-content: center;
 }
-
+    
 nav ul li {
-    margin: 0 15px;
+    display: inline;
 }
-
+    
 nav ul li a {
-    font-family: 'minhafonte' sans-serif;
     text-decoration: none;
     color: white;
+    font-size: 18px;
     transition: opacity 0.3s;
 }
-
+    
 nav ul li a:hover {
     opacity: 0.7;
 }
+    
+nav {
+    display: flex;
+}
+    
+h1{
+    font-size: 200%;
+    color:#fc3ba5
+}
+    
+p {
+    font-size: 170%;
+    text-align: justify;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    transition: opacity 0.3s;
+}
+    
+nav a:hover {
+    opacity: 0.7;
+}
+    
+#home {
+    color: #ff3ba7;
+}
+    
 
 .portfolio {
     max-width: 900px;
@@ -86,6 +115,7 @@ h1 {
     height: auto;
     border-radius: 10px;
     margin-right: 20px;
+    
 }
 
 .info {
@@ -99,6 +129,7 @@ h1 {
 
 .info p {
     margin: 10px 0;
+    font-size: 17px;
 }
 
 .info a {

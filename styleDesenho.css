@@ -15,12 +15,13 @@
 }
 
 body {
-    font-family: 'minhafonte', sans-serif;
-    font-size: 30px;
+    font-family: 'minhafonte';
+    text-align: center;
     background-color: #000;
     color: white;
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .inicio1 {
@@ -32,7 +33,7 @@ body {
     background-color: #000;
 }
 
-.logo1 {
+.logo {
     font-size: 1.5rem;
     color: #ff3ba7;
     font-family: 'minhafonte2', sans-serif;
@@ -70,6 +71,10 @@ h1{
     color:#fc3ba5
 }
 
+p {
+    font-size: 170%;
+    text-align: justify;
+}
 nav a {
     text-decoration: none;
     color: white;
@@ -85,55 +90,19 @@ nav a:hover {
     color: #ff3ba7;
 }
 
-.inicio1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 15px;
-    background-color: #000;
-}
-
-.logo {
-    font-size: 1.8rem;
-    color: #ff3ba7;
-    font-family: sans-serif;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: opacity 0.3s;
-}
-
-nav ul li a:hover {
-    opacity: 0.7;
-}
-
-h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #fc3ba5;
-}
-
-.des0{
+.des0 {
     width: 20%;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
-#PixelArt {
+.PixelArt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 15px;
     color: #fc3ba5;
-    text-decoration: none;
 }
 
 .des0:hover {

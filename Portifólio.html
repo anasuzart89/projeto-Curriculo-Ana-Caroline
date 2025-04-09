@@ -6,21 +6,40 @@
     <link rel="shortcut icon" href="imagem/png.png" type="image/x-icon">
     <title>Portfólio</title>
     <link rel="stylesheet" href="stylePortfolio.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
 
-<header class="inicio1">
-    <h1 class="logo1">My Portifólio.</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html" id="home">Home</a></li>
+    <header class="inicio1">
+        <h1 class="logo">My Portifólio.</h1>
+      
+        <!-- Menu padrão PC -->
+        <nav class="menu-padrao">
+          <ul>
+            <li><a id="home" href="index.html">Home</a></li>
             <li><a href="Certificados.html">Certificados</a></li>
             <li><a href="Portifólio.html">Portifólio</a></li>
             <li><a href="Portifólio_Desenhos.html">Desenhos</a></li>
             <li><a href="Curriculo.html">Curriculo</a></li>
-        </ul>
-    </nav>
-</header>
+          </ul>
+        </nav>
+      
+        <!-- Botão hamburguer mobile -->
+        <div class="menu-hamburguer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      
+        <!-- Menu Mobile escondido -->
+        <div class="menu-mobile-content">
+          <a href="index.html">Home</a>
+          <a href="Certificados.html">Certificados</a>
+          <a href="Portifólio.html">Portifólio</a>
+          <a href="Portifólio_Desenhos.html">Desenhos</a>
+          <a href="Curriculo.html">Curriculo</a>
+        </div>
+      </header>
 
 <section class="portfolio">
     <h1>Meus Projetos</h1>
@@ -72,5 +91,6 @@
     <p>&copy; 2025 Ana Caroline Suzart - Todos os direitos reservados.</p>
 </footer>
 <script src="portfolio.js" defer></script>
+<script src="menu.js"></script>
 </body>
 </html>
